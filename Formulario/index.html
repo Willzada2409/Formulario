@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Férias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Solicitação de Férias</h2>
+        
+        <form id="vacationForm">
+            <div class="row">
+                <div class="form-group">
+                    <label>Colaborador</label>
+                    <input type="text" id="colaborador" placeholder="Nome do colaborador" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Data</label>
+                    <input type="date" id="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Status</label>
+                    <input type="text" id="status" placeholder="Status" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Departamento</label>
+                    <input type="text" id="departamento" placeholder="Departamento" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Centro de Custo</label>
+                    <input type="text" id="centroCusto" placeholder="Centro de Custo" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Unidade de Negócio</label>
+                    <input type="text" id="unidadeNegocio" placeholder="Unidade de Negócio" required>
+                </div>
+            </div>
+
+            <h3>Período Aquisitivo</h3>
+            <div class="row">
+                <div class="form-group">
+                    <label>Início</label>
+                    <input type="date" id="inicio" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Fim</label>
+                    <input type="date" id="fim" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Dias de Saldo</label>
+                    <input type="number" id="diasSaldo" placeholder="Saldo de Dias" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Limite</label>
+                    <input type="date" id="limite" required>
+                </div>
+            </div>
+
+            <h3>Início das Férias</h3>
+            <div class="row">
+                <div class="form-group">
+                    <label>Início</label>
+                    <input type="date" id="inicioFerias" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Fim</label>
+                    <input type="date" id="fimFerias" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Abono</label>
+                    <input type="number" id="abono" placeholder="Dias de Abono" required>
+                </div>
+
+                <div class="form-group">
+                    <label>1ª Parc. do 13º Salário</label>
+                    <select id="parcela13" required>
+                        <option value="">Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Enviar Solicitação</button>
+        </form>
+
+        <p class="aviso">AVISO: Entregue a Carteira de Trabalho para anotações de férias.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
